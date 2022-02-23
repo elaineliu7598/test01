@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [Q1.當新增或編輯完資料點擊存檔後，modal不會自動關閉](#Q1.當新增或編輯完資料點擊存檔後，modal不會自動關閉)
-- [Q2.`new.bootstrap.modal(this.$refs.prodModal)`取得的是哪一個的ref？](#Q2.`new.bootstrap.modal(this.$refs.prodModal)`取得的是哪一個的ref？)
+- [Q1.當新增或編輯完資料點擊存檔後，modal 不會自動關閉](#Q1.當新增或編輯完資料點擊存檔後，modal不會自動關閉)
+- [Q2.new.bootstrap.modal(this.$refs.prodModal)取得的是哪一個的 ref？](#Q2.`new.bootstrap.modal(this.$refs.prodModal)`取得的是哪一個的ref？)
 
 ## Q1. 當新增或編輯完資料點擊存檔後，modal 不會自動關閉。
 
