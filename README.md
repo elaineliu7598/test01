@@ -78,8 +78,13 @@ products.js：點擊新增或編輯時（aka 觸發 `openProdModal()`），`this
 
 根據以上說明，
 1. 回答 Q2：
+
     `new.bootstrap.modal(this.$refs.prodModal)` 取得的是 x-template 裡的 modal DOM。
+
     可藉由調整 `<modal-for-prod>` 的 `ref` 命名，去對應 `openProdModal()` 中的 `this.$refs` 做[驗證](https://github.com/elaineliu7598/Vue-Live/commit/2904f9baaf7e76ad700b4b4ecccf38947419d93c)。
+
 2. 回到 Q1 的解法：
+
     建立 modal 實體時，其實可以維持用 `getElementById` 的方式取 DOM，不一定要使用 `ref` 的方式。如果使用 `getElementById` 就不需在 x-template 的 modal 加 `ref`。
+    
     影響 Q1 的關鍵在：元件標籤要加 `ref`，以及 step2 提到的 HTML 結構，解決這兩點，就可以透過 `this.$refs` 去呼叫函式。
