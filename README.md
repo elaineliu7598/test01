@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [Q1.當新增或編輯完資料點擊存檔後，modal 不會自動關閉](#Q1.當新增或編輯完資料點擊存檔後，modal不會自動關閉)
-- [Q2.new.bootstrap.modal(this.$refs.prodModal) 取得的是哪一個的 ref？](#Q2.`new.bootstrap.modal(this.$refs.prodModal)`取得的是哪一個的ref？)
+- [Q1. 當新增或編輯完資料點擊存檔後，modal 不會自動關閉](#q1-當新增或編輯完資料點擊存檔後modal-不會自動關閉)
+- [Q2. new.bootstrap.modal(this.$refs.prodModal) 取得的是哪一個的 ref？](#q2-newbootstrapmodalthisrefsprodmodal-取得的是哪一個的-ref)
 
 ## Q1. 當新增或編輯完資料點擊存檔後，modal 不會自動關閉。
 
@@ -86,5 +86,5 @@ products.js：點擊新增或編輯時（aka 觸發 `openProdModal()`），`this
 2. 回到 Q1 的解法：
 
     建立 modal 實體時，其實可以維持用 `getElementById` 的方式取 DOM，不一定要使用 `ref` 的方式。如果使用 `getElementById` 就不需在 x-template 的 modal 加 `ref`。
-    
+
     影響 Q1 的關鍵在：元件標籤要加 `ref`，以及 step2 提到的 HTML 結構，解決這兩點，就可以透過 `this.$refs` 去呼叫函式。
