@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Q1.當新增或編輯完資料點擊存檔後，modal 不會自動關閉](#Q1.當新增或編輯完資料點擊存檔後，modal不會自動關閉)
-- [Q2.new.bootstrap.modal(this.$refs.prodModal)取得的是哪一個的 ref？](#Q2.`new.bootstrap.modal(this.$refs.prodModal)`取得的是哪一個的ref？)
+- [Q2.new.bootstrap.modal(this.$refs.prodModal) 取得的是哪一個的 ref？](#Q2.`new.bootstrap.modal(this.$refs.prodModal)`取得的是哪一個的ref？)
 
 ## Q1. 當新增或編輯完資料點擊存檔後，modal 不會自動關閉。
 
@@ -20,10 +20,12 @@ bootstrap 的 modal 沒有使用同一個實體，目前在 [prod-modal.js](http
 
 #### step1：
 
-僅在 prod-modal.js 生成 modal 實體，並用 `refs` 取代 `getElementById` 的方式去取得 DOM 元素。
+僅在 prod-modal.js 建立 modal 實體，並用 `refs` 取代 `getElementById` 的方式去取得 DOM 元素。
 
 ▲ 實作：
+
 在元件標籤加上 `ref` 屬性並自訂名稱： `<modal-for-prod ref="prodModal">`。
+
 modal 實體使用 `$refs` 去選取 DOM： `prodModal = new bootstrap.Modal(this.$refs.prodModal);`。
 
 #### step2：
